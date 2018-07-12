@@ -7,8 +7,8 @@ void layemail(int i, string s){
 	string data;
 	int j,k=i;
 	for(j=i;(s[j]!=' ');j--) k--;
-	for(j=k+1;(s[j]!='@');j++) data=data+s[j];
-	for(j=i;(s[j]!=' ');j++)
+	//for(j=k+1;(s[j]!='@');j++) data=data+s[j];
+	for(j=k+1;(s[j]!=' ');j++)
 	data=data+s[j];
 	cout<<data<<endl;
 	fstream fo("output.txt",ios::out | ios::app);
